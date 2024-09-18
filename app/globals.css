@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+#hex {
+  position: absolute;
+  top: -100px;
+  width: 35em;
+  height: 59em;
+
+  border-radius: 40px;
+  right: -20px;
+}
+#hex::before,
+#hex::after {
+  content: "";
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  background: inherit;
+  border-radius: inherit;
+}
+#hex::before {
+  transform: rotate(60deg);
+}
+#hex::after {
+  transform: rotate(-60deg);
+}
+
+#shape {
+  position: absolute;
+  top: 350px;
+  width: 10em;
+  height: 10em;
+  right: 230px;
+  z-index: 1;
+  background-color: #6527a3;
+}
+#shape::before,
+#shape::after {
+  content: "";
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  background: inherit;
+}
+#shape::before {
+  clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
+  right: 100px;
+}
