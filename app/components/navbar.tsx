@@ -24,7 +24,7 @@ const routes = [
 ];
 export default function Navbar() {
   return (
-    <div className=" w-full h-32 flex items-end relative">
+    <div className=" w-full h-[130px] flex items-end relative">
       <div className="flex bg-gray w-4/5 mx-auto box-border  ">
         <Image src={logo} alt="logo" className="absolute top-1 "></Image>
         <div className="flex grow justify-center">

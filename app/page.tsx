@@ -61,7 +61,7 @@ export default function Home() {
         <div>
           <Image src={header} className="w-full h-[800px]" alt="header"></Image>
           <h1 className="absolute  z-10 top-36 right-56 text-white text-6xl text-justify">
-            یک <span className="text-lightpurpel font-bold">مشاور خوب</span>{" "}
+            یک <span className="text-lightpurpel font-black">مشاور خوب</span>{" "}
             <br></br>
             <span className="text-green font-bold">ارزشمند</span> است.
           </h1>
@@ -72,7 +72,7 @@ export default function Home() {
           <div id="hex" className="opacity-50 bg-black"></div>
         </div>
         <div className="absolute bottom-0 bg-black h-1/4 w-full text-white flex px-48 py-2">
-          <div className="w-1/3 px-14">
+          <div className="w-2/3 pl-10">
             <Titre title="درباره ما:"></Titre>
           </div>
           <div className=" flex flex-col items-start py-8">
@@ -83,15 +83,14 @@ export default function Home() {
               نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
               کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان
               جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای
-              طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان
-              فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری
-              موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد
-              نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل
-              دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+              طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در
+              زبانواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و
+              زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات
+              پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
             </p>
-            <div className="flex items-center">
+            <div className="flex items-center pb-7">
               <BsChevronLeft className="font-bold text-2xl text-green"></BsChevronLeft>
-              <button className="text-green">بیشتر بخوانید</button>
+              <button className="text-green ">بیشتر بخوانید</button>
             </div>
           </div>
           <Image src={fartaklogo2} alt="logo"></Image>

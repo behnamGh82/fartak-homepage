@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        vazir: ["var{--font-vazir}"],
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
